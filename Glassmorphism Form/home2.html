@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="bootstrap.css" media="screen">
+    <link rel="stylesheet" href="styles.css" media="screen" >
+
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
+    <link rel="manifest" href="images/site.webmanifest">
+    
+
+<style>
+
+p{
+  font-size: 13px;
+  font-family:Lucida Fax;
+  color: #fff;
+  margin:15px;
+  text-align:left;
+  text-decoration: none;
+  list-style-type:none ;
+}
+
+a p{
+  text-align: center;
+  font-size: 13px;
+  font-family:Lucida Fax;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: -8px;
+}
+
+.login-div{
+  box-shadow:  8px 9px 9px #00020341,
+  -4px -4px 4px #071a2557;
+  padding: 40px;
+  background-size: cover;
+  border-radius: 1%;
+  background:transparent;
+}
+
+.login-div label{
+  text-align: left;
+  text-shadow: 2px 2px 2px #000;
+
+}
+
+form{
+  margin: 0px 0px 10px 0px;
+  color: #000;
+}
+
+.login-div input{
+  background: rgba(125, 25, 255, 0.288);
+  padding:23px;
+  color: #fff;
+  border-radius: 25px;
+
+}
+
+input[type="checkbox"] {
+  border: none;
+  outline: none;
+  font-size: 1em;
+  cursor: pointer;
+  background: saddlebrown;
+  margin-left: 20px;
+color: saddlebrown;
+}
+
+.brand{
+  color: #fff;
+  padding-left: 5px;
+  font-family:'Nunito';
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.btn{
+  background:rgb(123, 18, 243);
+  background: linear-gradient( to right,  rgb(119, 0, 255) , rgb(119, 0, 255),rgba(255, 81, 0, 0.596));
+  font-family:'Nunito';
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 8px;
+margin-top: 50px;
+}
+
+.btn:hover{
+  background: #fff;
+  border:1px solid  rgb(123, 18, 243);
+  color:rgb(123, 18, 243);
+  text-shadow: 1px 1px 1px #000;
+  transition: 0.3s all ease-out;
+  transform: scale(1.01);
+  z-index: 999;
+}
+</style>
+
+  </head>
+
+  <body>
+
+<h2>Welcome  Newbie</h2>
+
+<div class="container">
+ <div class="row">
+
+<center>
+<div class="col-sm-6">
+  <div class="button">
+  <a href="register.html"><button type="button"  name="button">Register</button></a>
+</div>
+</div>
+
+<div class="col-sm-6">
+  <div class="button">
+  <a href="login.html"><button type="button"  
+  name="button">Login</button></a>
+  <!-- data-toggle="modal" data-target="#myModal" -->
+</div>
+</div>
+
+
+</center>
+
+</div>
+
+</div>
+
+
+<!-- <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button></div>
+    <form class="" action="https://www.w3schools.com/action_page.php">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  
+        <div class="modal-body">
+        <div class="login-div">
+            <form id="form1" action=" " >
+
+        <p><label>Email</label>
+            <input type="email" id="email_id" class="form-control" placeholder="Email...." required="required"></p>
+         <p><label>Password</label>
+             <input type="password" id="pass_id" class="form-control" placeholder="Password....." required="required"><img src="" alt=""></p>
+
+             <input type="checkbox" id="brand" value="">
+                                       <label class="brand"><span></span> Remember me</label> 
+
+          <button  onclick="myLog( )" class="btn btn-primary btn-lg btn-block" >Login </button>  
+            </form>
+         <a href="register.html"><p>Don't have an Account?</p></a>
+
+         <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+         </div>
+        </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+    
+    </form>
+  </div>
+</div>
+</div> -->
+
+
+
+ <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+    
+</body>
+</html>
