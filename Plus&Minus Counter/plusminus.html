@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlusMinus</title>
+<style>
+body{
+   /* background-color: rgb(180, 48, 152);*/
+   background-image: url(wave.jpg);
+    background-size: cover;
+    font-family: monospace;
+    align-items: center;
+justify-content: center;
+text-align: center;
+font-weight: bolder;
+
+}
+fieldset{
+    background-image: url(warm.jpg);
+   padding:0px  35px 0px 35px;
+    border: 2px solid #000;
+   border-radius: 5px;
+   box-shadow:2px 2px 2px black;
+   color: #000;
+}
+
+
+h2{
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+    color: #000;
+    font-family: Broadway;
+    text-shadow: 1px 1px cornsilk;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+ul li{
+display: inline-block;
+margin-top: 10px;
+}
+
+.wrapper{
+   
+    text-align: center;
+  color: azure;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+}
+
+#count{
+    font-size: 130px;
+    margin-top: -12px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.btn{
+background: transparent;
+align-items: center;
+text-align: center;
+padding: 20px;
+width: 67px;
+margin: 10px;
+color: white;
+font-size: 25px;
+border-radius: 50%;
+box-shadow:3px 3px 2px black;
+cursor: pointer;
+}
+
+.btn:hover{
+    border: none;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.692);
+    box-shadow:1px 2px 2px white;
+
+}
+
+p{
+    font-size: 20px;
+    margin-top: 30px;
+
+}
+</style>
+
+</head>
+<body>
+    <ul>
+    <li><div class="clearfix">    </div></li>
+<li>  <fieldset>
+        <legend><img src="icon.png" alt="ico"></legend>
+    <h2>Count  E'm</h2>
+    
+    <div class="wrapper">
+            <div id="count">0  </div>
+              <button id="minus" class="btn">-</button>
+              <button id="plus" class="btn">+</button>   
+      </div>
+       
+<p>Plus or Minus</p>
+
+    </fieldset></li>
+
+   <li><div class="clearfix"></div></li>
+</ul>
+   <script>
+
+let count= document.getElementById('count').innerHTML;
+let minus = document.getElementById('minus');
+let plus = document.getElementById('plus');
+
+plus.addEventListener('click', ( ) =>{
+   count++;
+   document.getElementById('count').innerHTML = count;
+});
+
+minus.addEventListener('click', ( ) =>{
+   count--;
+   document.getElementById('count').innerHTML = count;
+});
+    </script>
+</body>
+</html>
